@@ -17,6 +17,7 @@ class FancyPage extends StatelessWidget {
 
     return Container(
         width: double.infinity,
+        //height: MediaQuery.of(context).size.height,
         color: model.color,
         child: Opacity(
           opacity: percentVisible,
