@@ -17,7 +17,6 @@ class FancyPage extends StatelessWidget {
 
     return Container(
         width: double.infinity,
-        height: double.infinity,
         color: model.color,
         child: Opacity(
           opacity: percentVisible,
