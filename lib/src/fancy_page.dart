@@ -17,11 +17,12 @@ class FancyPage extends StatelessWidget {
 
     return Container(
         width: double.infinity,
-        height: MediaQuery.of(context).size.height,
+        height: double.infinity,
         color: model.color,
         child: Opacity(
           opacity: percentVisible,
-          child: Column(mainAxisAlignment: MainAxisAlignment.center,
+          child: Column(mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.center,
             children: [
             Transform(
               transform: Matrix4.translationValues(
