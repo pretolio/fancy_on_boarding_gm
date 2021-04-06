@@ -35,6 +35,8 @@ class _MyHomePageState extends State<MyHomePage> {
     PageModel(
         color: const Color(0xFF678FB4),
         heroImagePath: 'assets/png/hotels.png',
+        width: 200,
+        height: 200,
         title: Text('Hotels',
             style: TextStyle(
               fontWeight: FontWeight.w800,
@@ -51,6 +53,8 @@ class _MyHomePageState extends State<MyHomePage> {
     PageModel(
         color: const Color(0xFF65B0B4),
         heroImagePath: 'assets/png/banks.png',
+        width: 200,
+        height: 200,
         title: Text('Banks',
             style: TextStyle(
               fontWeight: FontWeight.w800,
@@ -68,6 +72,8 @@ class _MyHomePageState extends State<MyHomePage> {
     PageModel(
       color: const Color(0xFF9B90BC),
       heroImagePath: 'assets/png/stores.png',
+      width: 200,
+      height: 200,
       title: Text('Store',
           style: TextStyle(
             fontWeight: FontWeight.w800,
@@ -89,6 +95,8 @@ class _MyHomePageState extends State<MyHomePage> {
     PageModel(
         color: const Color(0xFF678FB4),
         heroImagePath: 'assets/svg/hotel.svg',
+        width: 200,
+        height: 200,
         title: Text('Hotels SVG',
             style: TextStyle(
               fontWeight: FontWeight.w800,
@@ -106,6 +114,8 @@ class _MyHomePageState extends State<MyHomePage> {
     PageModel(
         color: const Color(0xFF65B0B4),
         heroImagePath: 'assets/svg/bank.svg',
+        width: 200,
+        height: 200,
         title: Text('Banks SVG',
             style: TextStyle(
               fontWeight: FontWeight.w800,
@@ -124,6 +134,8 @@ class _MyHomePageState extends State<MyHomePage> {
     PageModel(
       color: const Color(0xFF9B90BC),
       heroImagePath: 'assets/svg/store.svg',
+      width: 200,
+      height: 200,
       title: Text('Store SVG',
           style: TextStyle(
             fontWeight: FontWeight.w800,
