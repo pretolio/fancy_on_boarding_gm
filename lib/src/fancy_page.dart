@@ -19,16 +19,17 @@ class FancyPage extends StatelessWidget {
         color: model.color,
         child: Opacity(
           opacity: percentVisible,
-          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+          child: Column(mainAxisAlignment: MainAxisAlignment.center,
+            children: [
             Transform(
               transform: Matrix4.translationValues(
                   0.0, 50.0 * (1.0 - percentVisible), 0.0),
               child: Padding(
-                padding: EdgeInsets.only(bottom: 25.0),
+                padding: EdgeInsets.only(bottom: 10.0),
                 child: FancyImage(
                   image: model.heroImagePath,
-                  width: 200,
-                  height: 200,
+                  width: model.width,
+                  height: model.height,
                   color: model.heroImageColor,
                 ),
               ),
@@ -43,8 +44,7 @@ class FancyPage extends StatelessWidget {
             Transform(
               transform: Matrix4.translationValues(
                   0.0, 30.0 * (1.0 - percentVisible), 0.0),
-              child: Padding(
-                  padding: EdgeInsets.only(bottom: 75.0), child: model.body),
+              child: Padding(padding: EdgeInsets.only(bottom: 10), child: model.body),
             ),
           ]),
         ));

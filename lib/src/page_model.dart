@@ -8,17 +8,22 @@ class PageModel {
   final Widget body;
   final String iconImagePath;
   final Icon icon;
+  final double width;
+  final double height;
 
   PageModel({
     @required this.color,
     @required this.heroImagePath,
     this.heroImageColor,
     this.title,
+    this.width,
+    this.height,
     this.body,
     this.iconImagePath,
     this.icon,
   })  : assert(title != null),
         assert(body != null),
+        assert(width != null || height != null),
         assert(color != null),
         assert(heroImagePath != null),
         assert(
